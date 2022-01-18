@@ -1,0 +1,9 @@
+services:
+  app:
+    image: wilde67/hello-docker-app
+  server:
+    image: express-docker #when no dockerfile
+    ports: 
+      - 5050:5000
+  mongodb:
+    image: mongo
